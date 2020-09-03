@@ -1,0 +1,83 @@
+.modal {
+    display: none;
+    width: 800px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 3px 2px 8px rgba(0,0,0,0.5);
+}
+
+.writer > button{
+    margin: 0 auto;
+    margin-bottom: 60px;
+    display: block;
+    
+}
+
+.inputBox label{
+    display: inline-block;
+    width: 100px;
+}
+
+.inputBox input{
+    display: inline-block;
+    width: calc(100% - 100px);
+}
+
+.inputBox{
+    margin-bottom: 10px;
+}
+
+.buttonBox{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttonBox .inputBox2{
+    float:left;
+}
+
+.buttonBox .inputBox2{
+    float:left;
+}
+.buttonBox .inputBox2 label{
+    display: inline-block;
+}
+.buttonBox .btn{
+    float:right
+}
+
+.buttonBox .btn + .btn{
+    margin-right: 10px;
+}
+
+.textView{
+    color: #444;
+}
+
+.textView p{
+    min-height: 400px;
+}
+
+.textView span.title{
+    display:inline-block;
+    width: 100px;
+}
+
+.modal.show > div + div{
+    margin-top: 20px;
+}
+.update {
+    display: none;
+}
+
+#password_write, #password_update{
+    display: inline-block;
+    width: 200px;
+    margin-left: 15px;
+}

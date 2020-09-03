@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+  <head>
+		<title>Hello :-)</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="inner">
+          <h1>Hello</h1>
+          <p>안녕하세요. 웹 개발자 강서하입니다.</p>
+          <p>이 웹페이지는 nodejs, mysql을 이용하여 카드형식 게시판을 구현하였습니다. </p>
+          <div><a href="https://blog.naver.com/mooo4030" target="_blank">https://blog.naver.com/mooo4030</a></div>
+          <div><a href="https://github.com/kangseoha" target="_blank">https://github.com/kangseoha</a></div>
+          <div><a href="../seoha.pdf" target="_blank">포트폴리오 바로보기</a></div>
+				</div>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+        <div class="writer">
+          <button class="button big" id="write">글쓰기</button>
+        </div>
+    
+				<!-- Items -->
+					<section class="main items" id="list">
+            <!-- <article class="item">
+							<header>
+								<a href="#"><img src="../images/pic01.jpg" alt="" /></a>
+								<h3>제목</h3>
+							</header>
+              <p>글내용</p>
+              <button id="more">More</button>
+						</article> -->
+						
+					</section>
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://blog.naver.com/mooo4030" class="icon fa-bold"><span class="label">blog</span></a></li>
+							<li><a href="https://github.com/kangseoha" class="icon fa-git"><span class="label">git</span></a></li>
+						</ul>
+						<p class="copyright">부트스트랩 템플릿을 사용하였습니다. :-)</p>
+					</footer>
+
+			</div>
+
+      <!-- modal -->
+      <div class="modal write">
+        <!-- 1. 작성자 2. 제목 3. 내용 4. 비밀번호 -->
+        <h2>글쓰기</h2>
+        <div class="inputBox">
+          <label>작  성  자</label><input type="text" id="name_writer" required/>
+        </div>
+        <div class="inputBox">
+          <label>제  목</label><input type="text" id="title_writer" required/>
+        </div>
+        <br>
+        <div>
+          <label>내 용</label>
+          <textarea rows="10" id="content_writer"></textarea>
+        </div>
+        <div class="buttonBox">
+          <div class="inputBox2">
+            <label>비밀번호</label><input type="password" id="password_write" required/>
+          </div>
+          <button class="btn close">닫기</button>
+          <button class="btn" id="writer">작성하기</button>
+        </div>
+      </div>
+      
+      <div class="modal show">
+        <h2>글보기</h2>
+        <div class="textView" id="modify">
+          <div><span class="title">작  성  자</span><span class="text" id="name_read"></span></div>
+        </div>
+        <div class="textView">
+          <div><span class="title">제 목</span><span class="text" id="title_read"></span></div>
+        </div>
+        <br>
+        <div class="textView">
+          <div>내용</div>
+          <p id="content_read"></p>
+        </div>
+        <div class="buttonBox">
+          <div class="inputBox2">
+            <label>비밀번호</label><input type="password" id="password_update"/>
+          </div>
+          <button class="btn close">닫기</button>
+          <button class="btn" id="update">수정하기</button>
+          <button class="btn" id="delete">삭제하기</button>
+        </div>
+      </div>
+
+
+      <div class="modal update">
+        <h2>글 수 정</h2>
+        <div class="inputBox" id="modi_idx">
+          <label>작  성  자</label><input type="text" id="name_modi" required/>
+        </div>
+        <div class="inputBox">
+          <label>제  목</label><input id="title_modi" required/>
+        </div>
+        <br>
+        <div>
+          <label>내 용</label>
+          <textarea rows="10" id="content_modi" required></textarea>
+        </div>
+        <div class="buttonBox">
+          <button class="btn close">닫기</button>
+          <button class="btn" id="update_btn">수정하기</button>
+        </div>
+      </div>
+
+      <!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+			<script src="../javascripts/custom.js"></script>
+	</body>
+</html>
